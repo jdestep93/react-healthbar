@@ -1,0 +1,22 @@
+{
+  "name": "react-healthbar",
+  "version": "0.0.1",
+  "description": "A react library for creating dynamic health bars",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jdestep93/react-healthbar.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Jonathan Estep",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdestep93/react-healthbar/issues"
+  },
+  "homepage": "https://github.com/jdestep93/react-healthbar#readme"
+}
