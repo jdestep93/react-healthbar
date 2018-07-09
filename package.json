@@ -4,7 +4,8 @@
   "description": "A react library for creating dynamic health bars",
   "main": "dist/index.js",
   "scripts": {
-    "test": "node_modules/.bin/jest --maxWorkers=1 --logHeapUsage",
+    "lint": "eslint 'app/**/*.js'",
+    "test": "npm run lint && node_modules/.bin/jest --maxWorkers=1 --logHeapUsage",
     "build": "rollup -c"
   },
   "files": [
