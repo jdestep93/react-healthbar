@@ -10,6 +10,11 @@
   "files": [
     "dist"
   ],
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "babel-core/register"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jdestep93/react-healthbar.git"
