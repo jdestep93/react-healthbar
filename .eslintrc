@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "object-curly-spacing": [
+      2,
+      "never"
+    ],
+    "global-require": 0
+  },
+  "env": {
+    "es6": true
+  },
+  "globals": {
+    "require": true
+  }
+}
