@@ -11,8 +11,9 @@
     "dist"
   ],
   "jest": {
-    "modulePathIgnorePatterns": [
-      "babel-core/register"
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
     ]
   },
   "repository": {
