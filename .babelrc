@@ -10,6 +10,11 @@
       }
     ]
   ],
+  "env": {
+    "test": {
+      "presets": [["env"], "react"]
+    }
+  },
   "plugins": [
     "external-helpers"
   ]
