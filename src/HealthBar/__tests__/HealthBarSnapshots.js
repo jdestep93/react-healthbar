@@ -141,4 +141,46 @@ describe('Health Bar Snapshots', () => {
       expect(!!e).toBe(true);
     }
   });
+
+  it('should throw if height isnt present', () => {
+    try {
+      renderer.create(
+        <HealthBar
+          percentage={101}
+          width={100}
+          colors={[
+            '#9d1',
+            '#ff1',
+            '#c00',
+            '#a00',
+            '#b77',
+            '#b42'
+          ]}
+        />
+      )
+    } catch (e) {
+      expect(!!e).toBe(true);
+    }
+  });
+
+  it('should throw if height isnt present', () => {
+    try {
+      renderer.create(
+        <HealthBar
+          percentage={101}
+          height={100}
+          colors={[
+            '#9d1',
+            '#ff1',
+            '#c00',
+            '#a00',
+            '#b77',
+            '#b42'
+          ]}
+        />
+      )
+    } catch (e) {
+      expect(!!e).toBe(true);
+    }
+  });
 });
