@@ -16,7 +16,7 @@ export const defaultColorPallet = [
 ];
 
 export function generateMinMaxForColors(healthBarColors) {
-  if (!healthBarColors instanceof Array) throw Error('argument must be an array!');
+  if (!healthBarColors instanceof Array) throw new Error('argument must be an array!');
 
   return healthBarColors.map((color, index) => ({
     color,
@@ -26,8 +26,8 @@ export function generateMinMaxForColors(healthBarColors) {
 }
 
 export function getHealthBarBackgroundColor(percentage, healthBarColors) {
-  if (!healthBarColors instanceof Array) throw Error('argument must be an array!');
-  if (isNaN(percentage)) throw Error('percentage must be a number!');
+  if (!healthBarColors instanceof Array) throw new Error('argument must be an array!');
+  if (isNaN(percentage)) throw new Error('percentage must be a number!');
 
   return first(generateMinMaxForColors(healthBarColors)
     .filter(colorInfo => inRange(percentage, colorInfo.min, colorInfo.max))
