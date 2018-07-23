@@ -36,11 +36,15 @@ export default function HealthBar({
 }
 
 HealthBar.propTypes = {
-  percentage: PropTypes.between({gte: 0, lte: 100}).isRequired,
+  percentage: (props, propName, componentName) => {
+    if (props[propName] < 0 || props[propName] > 100 || isNaN(props[propName])) {
+      return new Error(`percentage must be between 0 and 100 including both ${componentName}`);
+    }
+  },
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   colors: PropTypes.arrayOf((propValue, key, componentName) => {
-    if (!hexColorRegex.match(propValue[key])) {
+    if (!hexColorRegex.test(propValue[key])) {
       return new Error(
         `Invalid color code ${propValue[key]} supplied to ${componentName}`
       );

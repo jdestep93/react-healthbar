@@ -27,7 +27,7 @@ export function generateMinMaxForColors(healthBarColors) {
 
 export function getHealthBarBackgroundColor(percentage, healthBarColors) {
   if (!healthBarColors instanceof Array) throw Error('argument must be an array!');
-  if (isNaN(percentage)) throw Error('argument must be an array!');
+  if (isNaN(percentage)) throw Error('percentage must be a number!');
 
   return first(generateMinMaxForColors(healthBarColors)
     .filter(colorInfo => inRange(percentage, colorInfo.min, colorInfo.max))

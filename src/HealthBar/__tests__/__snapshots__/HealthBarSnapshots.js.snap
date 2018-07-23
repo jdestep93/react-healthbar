@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Health Bar Snapshots should render correctly 1`] = `
+<div
+  style={
+    Object {
+      "border": "1px solid black",
+      "borderRadius": "3px",
+      "height": 30,
+      "maxWidth": 200,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#15c621",
+        "height": "100%",
+        "minHeight": 30,
+        "width": "100%",
+      }
+    }
+  >
+     
+  </div>
+</div>
+`;
+
+exports[`Health Bar Snapshots should render correctly 2`] = `
+<div
+  style={
+    Object {
+      "border": "1px solid black",
+      "borderRadius": "3px",
+      "height": 10,
+      "maxWidth": 100,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#c00",
+        "height": "100%",
+        "minHeight": 10,
+        "width": "0%",
+      }
+    }
+  >
+     
+  </div>
+</div>
+`;
+
+exports[`Health Bar Snapshots should render correctly 3`] = `
+<div
+  style={
+    Object {
+      "border": "1px solid black",
+      "borderRadius": "3px",
+      "height": 200,
+      "maxWidth": 100,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#c00",
+        "height": "100%",
+        "minHeight": 200,
+        "width": "55%",
+      }
+    }
+  >
+     
+  </div>
+</div>
+`;
