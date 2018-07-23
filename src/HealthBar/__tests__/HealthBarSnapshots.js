@@ -163,7 +163,7 @@ describe('Health Bar Snapshots', () => {
     }
   });
 
-  it('should throw if height isnt present', () => {
+  it('should throw if width isnt present', () => {
     try {
       renderer.create(
         <HealthBar
