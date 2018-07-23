@@ -4,6 +4,7 @@ import HealthBar from '../HealthBar'
 
 describe('Health Bar Snapshots', () => {
   beforeEach(() => {
+    // disable the console error so it doesnt appear in our tests
     jest.spyOn(global.console, 'error').mockImplementation(() => jest.fn());
   });
 
